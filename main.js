@@ -6,6 +6,7 @@ form.oninput = function () {
     } else {
         inputPlace = document.createElement("div");
         inputPlace.id = "result";
+        inputPlace.className = "result";
         form.after(inputPlace);
     }
 
@@ -40,6 +41,7 @@ document.getElementById("addPosts").addEventListener('click', function () {
     } else {
         addPostsCount = document.createElement("div");
         addPostsCount.id = "addPostsCount";
+        addPostsCount.className = "addPostsCount";
         let form = document.getElementById("addPosts");
         form.after(addPostsCount);
     }
