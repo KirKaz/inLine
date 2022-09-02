@@ -1,0 +1,17 @@
+CREATE DATABASE listAndCommnets;
+
+CREATE TABLE News (
+                            id integer auto_increment not null key ,
+                            userId integer,
+                            title varchar(256),
+                            body longtext
+);
+
+
+CREATE TABLE Comments (
+                      id integer auto_increment not null key ,
+                      postId integer,
+                      name varchar(256),
+                      email varchar(256),
+                      body longtext
+);
